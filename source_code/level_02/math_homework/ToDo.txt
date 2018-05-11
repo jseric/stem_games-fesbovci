@@ -1,0 +1,34 @@
+You are employed as a software developer and
+you have been assigned N bugs to solve as part of your job.
+
+You are not required to solve all of them, though.
+You are required to solve the given problems until exactly M of them remain.
+
+At your disposal are two programs that can help you solve the problems more quickly.
+
+Program A can solve one problem.
+Program B can solve half of your problems (rounded down).
+
+The programs are highly complex and consume a lot of processing power.
+
+Each program has its cost given as its processing cost.
+As you cannot risk overloading your computer, you need to find the bare
+minimum time needed to solve the required number of bugs.
+
+The first line of the input are two numbers separated by a space:
+N and M.
+
+The second line are the respective costs of programs A and B,
+also separated by a space.
+
+Your output should be a single line containing the minimum cost.
+
+N will never be greater than 100000. The costs will never be greater than 10000.
+
+### Test Cases ###
+1)
+Input:
+100 5
+3 1
+Output:
+7

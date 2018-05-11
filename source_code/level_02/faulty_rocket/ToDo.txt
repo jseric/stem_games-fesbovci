@@ -1,0 +1,39 @@
+Your local space station is about to launch a rocket into space.
+However, proper analysis was not conducted and all of the possible
+risks have not been addressed.
+
+Your mission is to stop the rocket before it launches and causes possible damage.
+The stop codes forn the rocket are encrypted by a bitwise expression.
+You need to evaluate the expression in order to figure
+out the code to stop the rocket.
+The logic expression consists of variable names and operators.
+
+Each variable name is defined as a lowercase letter from
+the English alphabet (a-z).
+
+The operators are:
+& - bitwise and
+| - bitwise or
+^ - bitwise xor
+
+Operations have no precedence, they are evaluated from left to right.
+The first line of the input contains the logic expression,
+with at least 1 character and at most 1000001 characters.
+
+You can expect the expression to always be valid.
+
+All other lines contain a variable name and its 32b value with
+the left-most bit being the most significant bit.
+
+You should output a string of 32 bits representing the result of the expression.
+
+### Test Cases ###
+1)
+Input:
+a&b|c^d
+a 00000000000000000000000000000010
+b 00000000000000000000000000000001
+c 00000000000000000000000000000011
+d 00000000000000000000000000000010
+Output:
+00000000000000000000000000000001

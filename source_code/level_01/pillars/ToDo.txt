@@ -1,0 +1,37 @@
+Ancient Greeks are famous for building beautiful temples.
+
+Their temples are built with one of three styles of pillars: 
+round (), square [] and curly {}.
+
+Each style of pillars has its opening and closing variant, 
+for example, the curly pillars' opening pillar looks like '{', 
+and the closing pillar like '}'.
+
+For a temple to remain standing without risk of collapsing,
+each one of its opening pillars should have its corresponding closing pillar present.
+ 
+Also, after every opening pillar, the next closing one should be of the same style.
+
+Your job is to determine whether a given temple is in risk of collapsing or not.
+
+The input is a string consisting of characters '[]{}()', at most 1000.
+You should output T if the brackets are ordered correctly, F otherwise.
+
+### Test Cases ###
+1)
+Input:
+[{(()[()])}]{[]}
+Output:
+T
+
+2)
+Input:
+{}
+Output:
+T
+
+3)
+Input:
+{]{}{{}}]
+Output:
+F
